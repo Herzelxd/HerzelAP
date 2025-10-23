@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html>
- <head>     
-          <title>Profil Saya</title>
-          <link rel="
- </head>
-</body>
-      <! -- Konten yang terlihat oleh pengunjung akan ada disini -->
-<img src="foto-profil.jpg" alt="Foto profil saya">
-  <h1>Nama Lengkap Anda</h1>
-  <p>Siswa SMA yang tertarik dengan teknologi dan desain.
-    Selamat datang di website pertama saya!</p>
-  <a
-    href={"htpps
-  
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Foto Profil Saya</h1>
+    <img src="foto-profil.jpg" alt="Foto profil saya" width="200" />
+  </header>
+
+  <main>
+    <section>
+      <h2>Halo! 👋</h2>
+      <p>Saya tertarik dengan <strong>teknologi</strong> dan <strong>desain</strong>.</p>
+      <p>Selamat datang di website pertama saya!</p>
+    </section>
+
+    <section>
+      <h2>Kontak</h2>
+      <form id="contact">
+        <label>Nama: <input type="text" name="nama" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 - Herzel Zero</small>
+  </footer>
+
+  <script>
+    // Pesan sederhana
+    document.getElementById('contact').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Terima kasih sudah mengunjungi profil saya!');
+    });
+  </script>
 </body>
 </html>
