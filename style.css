@@ -12,10 +12,11 @@ header, footer {
 }
 
 img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;   
+    width: 150px;          /* ubah ukuran supaya lebih kecil */
+    height: 150px;         /* biar bentuknya proporsional */
+    border-radius: 50%;    /* bikin foto jadi bulat */
+    object-fit: cover;     /* potong bagian luar biar rapi */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* (opsional) kasih bayangan lembut */
 }
 
 button {
