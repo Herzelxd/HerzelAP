@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Foto Profil Saya</h1>
+    <img src="foto-profil.jpg" alt="Foto profil saya" width="200" />
+  </header>
+
+  <main>
+    <section>
+      <h2>Halo! 👋</h2>
+      <p>Saya tertarik dengan <strong>teknologi</strong> dan <strong>desain</strong>.</p>
+      <p>Selamat datang di website pertama saya!</p>
+
+      <!-- ✅ Tambahkan tombol di sini -->
+      <button id="sapaBtn">👋 Sapa Saya</button>
+    </section>
+
+    <section>
+      <h2>Kontak</h2>
+      <p>
+        <a href="https://instagram.com/herzel.zero" target="_blank">📸 Lihat Instagram saya</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 - Herzel Zero</small>
+  </footer>
+
+  <!-- ✅ Tambahkan JavaScript di bawah ini -->
+  <script>
+    document.getElementById('sapaBtn').addEventListener('click', function() {
+      alert('Halo! Senang berkenalan denganmu 😊');
+    });
+  </script>
+</body>
+</html>
