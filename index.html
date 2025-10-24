@@ -1,45 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profil Saya</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina AI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Foto Profil Saya</h1>
-    <img src="herzel.png" alt="Foto profil saya" width="200" />
-  </header>
+  <div class="container">
+    <header>
+      <h1>Lumina AI</h1>
+      <p class="tagline">Temukan makna di balik setiap pertanyaan.</p>
+    </header>
 
-  <main>
-    <section>
-      <h2>Halo! 👋</h2>
-      <p>Saya tertarik dengan <strong>teknologi</strong> dan <strong>desain</strong>.</p>
-      <p>Selamat datang di website pertama saya!</p>
+    <div id="chat-box" class="chat-box"></div>
 
-      <!-- ✅ Tambahkan tombol di sini -->
-      <button id="sapaBtn">👋 Sapa Saya</button>
-    </section>
+    <form id="chat-form" class="chat-form">
+      <input id="user-input" type="text" placeholder="Ketik pertanyaanmu di sini..." autocomplete="off" required>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
 
-    <section>
-      <h2>Kontak</h2>
-      <p>
-        <a href="https://instagram.com/zellix308" target="_blank">📸 Lihat Instagram saya</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <small>&copy; 2025 - Herzel Zero</small>
-  </footer>
-
-  <!-- ✅ Tambahkan JavaScript di bawah ini -->
-  <script>
-    document.getElementById('sapaBtn').addEventListener('click', function() {
-      alert('Halo! Senang berkenalan denganmu 😊');
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
