@@ -1,33 +1,103 @@
-/* Gaya untuk header, teks, dll */
+/* --- Gaya Umum (Body & Font) --- */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(180deg, #f9f9f9, #e8f6f3);
+  color: #222;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding: 20px;
 }
 
-/* Misalnya gaya gambar profil */
-img {
-  border-radius: 50%;
-}
-
-/* dst... */
-
-/* --- Tambahkan ini di paling bawah --- */
-#sapaBtn {
+/* --- Header --- */
+header {
   background-color: #10a37f;
   color: white;
+  padding: 30px 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* --- Foto Profil --- */
+header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;       /* Biar foto nggak gepeng */
+  border-radius: 50%;      /* Biar jadi bulat */
+  border: 4px solid white; /* Bingkai putih */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Bagian Utama (Main) --- */
+main {
+  padding: 30px 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0d8567;
+  font-size: 24px;
+}
+
+/* --- Paragraf --- */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px auto;
+  max-width: 500px;
+}
+
+/* --- Tombol Sapa Saya --- */
+#sapaBtn {
+  background-color: #10a37f; /* Warna hijau ChatGPT */
+  color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  margin-top: 10px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
 }
 
 #sapaBtn:hover {
   background-color: #0d8567;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
+/* --- Link Instagram --- */
+a {
+  text-decoration: none;
+  color: #10a37f;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0d8567;
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #10a37f;
+  color: white;
+  padding: 15px 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer small {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
